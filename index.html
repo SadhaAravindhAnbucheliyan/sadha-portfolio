@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadha | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:#0f172a;
+            color:white;
+            line-height:1.6;
+        }
+
+        a{
+            text-decoration:none;
+            color:white;
+        }
+
+        /* NAVBAR */
+
+        nav{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            position:fixed;
+            top:0;
+            z-index:1000;
+            background:rgba(15,23,42,0.95);
+            backdrop-filter:blur(10px);
+        }
+
+        nav h2{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            display:flex;
+            gap:30px;
+            list-style:none;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+            transition:0.3s;
+        }
+
+        /* HERO */
+
+        .hero{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:0 10%;
+            background:linear-gradient(to right,#0f172a,#111827);
+        }
+
+        .hero-content h1{
+            font-size:4rem;
+            margin-bottom:20px;
+        }
+
+        .hero-content h1 span{
+            color:#38bdf8;
+        }
+
+        .hero-content p{
+            max-width:700px;
+            margin:auto;
+            color:#cbd5e1;
+            font-size:1.1rem;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            padding:14px 28px;
+            background:#38bdf8;
+            color:#0f172a;
+            border-radius:8px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+            background:#0ea5e9;
+        }
+
+        /* SECTION */
+
+        section{
+            padding:100px 10%;
+        }
+
+        .section-title{
+            font-size:2.5rem;
+            margin-bottom:40px;
+            color:#38bdf8;
+            text-align:center;
+        }
+
+        /* ABOUT */
+
+        .about{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:50px;
+            align-items:center;
+        }
+
+        .about-box{
+            background:#1e293b;
+            padding:30px;
+            border-radius:15px;
+        }
+
+        /* SKILLS */
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .skill-card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .skill-card:hover{
+            transform:translateY(-5px);
+            background:#334155;
+        }
+
+        /* PROJECTS */
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+        }
+
+        .project-card{
+            background:#1e293b;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .project-content{
+            padding:25px;
+        }
+
+        .project-content h3{
+            margin-bottom:15px;
+            color:#38bdf8;
+        }
+
+        /* CONTACT */
+
+        .contact{
+            text-align:center;
+        }
+
+        .contact p{
+            margin-bottom:15px;
+            color:#cbd5e1;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#94a3b8;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:768px){
+
+            .hero-content h1{
+                font-size:2.5rem;
+            }
+
+            .about{
+                grid-template-columns:1fr;
+            }
+
+            nav ul{
+                gap:15px;
+                font-size:0.9rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <h2>Sadha.</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Hello, I'm <span>Sadha</span></h1>
+
+            <p>
+                MSc Engineering Management graduate passionate about
+                Business Analysis, Data Analytics, Power BI, and Process Optimisation.
+                Building data-driven solutions and modern dashboards.
+            </p>
+
+            <a href="#" class="btn">Download CV</a>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+
+            <div class="about-box">
+                <h3>Profile</h3>
+
+                <p>
+                    Recent Engineering Management graduate with experience
+                    in project planning, stakeholder analysis, process optimisation,
+                    and data analytics.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Career Focus</h3>
+
+                <p>
+                    Seeking opportunities in Business Analysis,
+                    Project Coordination, and Data Analytics roles
+                    within innovative organisations.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <h3>Power BI</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Excel</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Business Analysis</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Project Management</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <h3>TARS Smart Bag System</h3>
+
+                    <p>
+                        Business and operational analysis for smart luggage solution
+                        including stakeholder analysis, WBS, scheduling,
+                        and feasibility assessment.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <h3>Autonomous Warehouse Robot</h3>
+
+                    <p>
+                        Warehouse automation analysis project focused on
+                        operational efficiency, workflow optimisation,
+                        and project planning.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <h3>Energy Storage Analysis</h3>
+
+                    <p>
+                        Comparative analysis of CAES, PHES,
+                        and flow battery technologies based on
+                        scalability and cost effectiveness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact">
+
+            <p>Email: aravindhsadha01@gmail.com</p>
+
+            <p>LinkedIn: Add your LinkedIn URL</p>
+
+            <p>GitHub: Add your GitHub URL</p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Sadha Aravindh | Portfolio Website
+
+    </footer>
+
+</body>
+</html>
